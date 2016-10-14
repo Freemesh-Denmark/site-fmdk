@@ -15,13 +15,13 @@ You can easily create your own experimental build with these commands:
     sudo apt-get install git make gcc g++ unzip libncurses5-dev zlib1g-dev subversion gawk bzip2 libssl-dev
     git clone https://github.com/freifunk-gluon/gluon.git
     cd gluon
+    git checkout v2016.1.5
     git clone https://github.com/Freemesh-Denmark/site-fmdk site
     make update
-    D=$(date '+%y%m%d%H%M');
     
 Build just the default target ar71xx-generic:
 
-    make DEFAULT_GLUON_RELEASE=2016.1.5~exp$D;
+    make -j16
     
 Build all targets and experimentals
 
