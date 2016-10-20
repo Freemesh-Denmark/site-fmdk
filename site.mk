@@ -1,6 +1,5 @@
 GLUON_SITE_PACKAGES := \
-        gluon-mesh-batman-adv-14 \
-        gluon-alfred \
+        gluon-mesh-batman-adv-15 \
         gluon-respondd \
         gluon-autoupdater \
         gluon-setup-mode \
@@ -23,26 +22,23 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         iptables \
         haveged
-# from fmdk-packages:
-GLUON_SITE_PACKAGES += \
-        gluon-config-mode-contact-obligatory
 
 # Always call `make` from the command line with the desired release version!
 # otherwise this is generated:
-DEFAULT_GLUON_RELEASE := 2016.1.5~exp$(shell date '+%y%m%d%H%M')
+DEFAULT_GLUON_RELEASE := 2016.2~exp$(shell date '+%y%m%d%H%M')
 
 
 # Allow overriding the release number from the command line
 GLUON_RELEASE ?= $(DEFAULT_GLUON_RELEASE)
 
 GLUON_PRIORITY ?= 0
-GLUON_BRANCH ?= experimental
+GLUON_BRANCH := stable
 export GLUON_BRANCH
 
 GLUON_TARGET ?= ar71xx-generic
 export GLUON_TARGET
 
-GLUON_LANGS ?= en da de
+GLUON_LANGS ?= en de
 
 # basic support the USB stack
 USB_PACKAGES_BASIC := \
