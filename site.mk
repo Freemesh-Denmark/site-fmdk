@@ -38,6 +38,9 @@ export GLUON_BRANCH
 GLUON_TARGET ?= ar71xx-generic
 export GLUON_TARGET
 
+GLUON_REGION ?= eu
+GLUON_ATH10K_MESH ?= ibss
+
 GLUON_LANGS ?= en de
 
 # basic support the USB stack
@@ -91,7 +94,7 @@ USB_PACKAGES_STORAGE := \
         kmod-nls-iso8859-2 \
         kmod-nls-koi8r \
         kmod-nls-utf8
-# from ffki-packages:
+# from fmdk-packages:
 USB_PACKAGES_STORAGE += \
         gluon-usb-media \
         gluon-config-mode-usb-media
