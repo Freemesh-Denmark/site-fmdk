@@ -16,7 +16,7 @@ BRANCH=${2:-"stable"}
 # must point to valid ecdsa signing key created by ecdsakeygen, relative to Gluon base directory
 SIGNING_KEY=${1:-"../ecdsa-key-secret"}
 #BROKEN must be set to "" or "BROKEN=1"
-BROKEN="BROKEN=1"
+BROKEN=""
 
 cd ..
 if [ ! -d "site" ]; then
@@ -37,7 +37,8 @@ echo "tail -f ../build.log &"
 sleep 3
 
 #rm -r output
-for TARGET in  ar71xx-generic ar71xx-mikrotik ar71xx-nand brcm2708-bcm2708 brcm2708-bcm2709 mpc85xx-generic ramips-rt305x sunxi x86-64 x86-generic x86-kvm_guest x86-xen_domu
+for TARGET in  ar71xx-generic
+#ar71xx-mikrotik ar71xx-nand brcm2708-bcm2708 brcm2708-bcm2709 mpc85xx-generic ramips-rt305x sunxi x86-64 x86-generic x86-kvm_guest x86-xen_domu
 do
 	date >> build.log
 	if [ -z "$VERSION" ]
