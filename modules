@@ -3,16 +3,16 @@
 
 ##        GLUON_SITE_FEEDS
 #                for each feed name given, add the corresponding PACKAGES_* lines
-GLUON_SITE_FEEDS='fmdk'
+GLUON_SITE_FEEDS='ffki'
 
 ##        PACKAGES_$feedname_REPO
 #                the  git repository from where to clone the package feed
-PACKAGES_FMDK_REPO=git://github.com/dvarum12/fmdk-packages.git
+PACKAGES_FFKI_REPO=git://github.com/freifunk-kiel/ffki-packages/
 
 ##        PACKAGES_$feedname_COMMIT
 #                the version/commit of the git repository to clone
-PACKAGES_FMDK_COMMIT=bf943b51090802013b5b7c0b89bfcb4ae99a0c72
+PACKAGES_FFKI_COMMIT=9376d333c1fa91ad23e6012515b4999fbc94d098
 
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
-PACKAGES_FMDK_BRANCH=master
+PACKAGES_FFKI_BRANCH=master
