@@ -5,7 +5,6 @@ GLUON_SITE_PACKAGES := \
         gluon-setup-mode \
         gluon-config-mode-core \
         gluon-config-mode-autoupdater \
-        gluon-config-mode-hostname \
         gluon-config-mode-mesh-vpn \
         gluon-config-mode-geo-location \
         gluon-ebtables-filter-multicast \
@@ -23,9 +22,13 @@ GLUON_SITE_PACKAGES := \
         iptables \
         haveged
 
+# from ffki-packages:
+GLUON_SITE_PACKAGES := \
+		gluon-config-mode-hostname-no-pretty
+
 # Always call `make` from the command line with the desired release version!
 # otherwise this is generated:
-DEFAULT_GLUON_RELEASE := 2016.2~exp$(shell date '+%y%m%d%H%M')
+DEFAULT_GLUON_RELEASE := 2016.2.1~exp$(shell date '+%y%m%d%H%M')
 
 
 # Allow overriding the release number from the command line
@@ -94,7 +97,7 @@ USB_PACKAGES_STORAGE := \
         kmod-nls-iso8859-2 \
         kmod-nls-koi8r \
         kmod-nls-utf8
-# from fmdk-packages:
+# from ffki-packages:
 USB_PACKAGES_STORAGE += \
         gluon-usb-media \
         gluon-config-mode-usb-media
