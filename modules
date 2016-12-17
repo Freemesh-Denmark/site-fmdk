@@ -11,7 +11,7 @@ PACKAGES_FFKI_REPO=git://github.com/freifunk-kiel/ffki-packages/
 
 ##        PACKAGES_$feedname_COMMIT
 #                the version/commit of the git repository to clone
-PACKAGES_FFKI_COMMIT=9376d333c1fa91ad23e6012515b4999fbc94d098
+PACKAGES_FFKI_COMMIT=ef1192086aa24925d8f65a80f71b720332b1fbe5
 
 ##  PACKAGES_$feedname_BRANCH
 #   the branch to check out
