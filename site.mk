@@ -23,8 +23,8 @@ GLUON_SITE_PACKAGES := \
         haveged
 
 # from ffki-packages:
-GLUON_SITE_PACKAGES := \
-		gluon-config-mode-hostname-no-pretty
+GLUON_SITE_PACKAGES += \
+	gluon-config-mode-hostname-no-pretty
 
 # Always call `make` from the command line with the desired release version!
 # otherwise this is generated:
