@@ -21,10 +21,13 @@ GLUON_SITE_PACKAGES := \
         iwinfo \
         iptables \
         haveged
-
+# from eulenfunk-packages (branch aus Nord):
+GLUON_SITE_PACKAGES += \
+	gluon-quickfix
 # from ffki-packages:
 GLUON_SITE_PACKAGES += \
-	gluon-config-mode-hostname-no-pretty
+	gluon-config-mode-hostname-no-pretty \
+	gluon-config-mode-contact-info-anonymous-hint
 
 # Always call `make` from the command line with the desired release version!
 # otherwise this is generated:
